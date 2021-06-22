@@ -12,12 +12,12 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const Bool viewontag         = True;     /* Switch view on tag switch */
 static const char *fonts[]          = { "Noto Sans Mono:size=12" };
-static const char dmenufont[]       = "Noto Sans Mono:size=12";
-static const char col_gray1[]       = "#222222";
+static const char dmenufont[]       = "Source Code Pro:size=12";
+static const char col_gray1[]       = "#000000";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
-static const char col_cyan[]        = "#005577";
+static const char col_cyan[]        = "#000000";
 static const unsigned int baralpha = 0xd0;
 static const unsigned int borderalpha = OPAQUE;
 static const char *colors[][3]      = {
@@ -92,8 +92,8 @@ static Key keys[] = {
 	// { MODKEY|Mod4Mask|ShiftMask,    XK_l,      incrogaps,      {.i = -1 } },
 	// { MODKEY|Mod4Mask|ControlMask,  XK_h,      incrigaps,      {.i = +1 } },
 	// { MODKEY|Mod4Mask|ControlMask,  XK_l,      incrigaps,      {.i = -1 } },
-	{ MODKEY|Mod4Mask,              XK_0,      togglegaps,     {0} },
-	{ MODKEY|Mod4Mask|ShiftMask,    XK_0,      defaultgaps,    {0} },
+	// { MODKEY|Mod4Mask,              XK_0,      togglegaps,     {0} },
+	// { MODKEY|Mod4Mask|ShiftMask,    XK_0,      defaultgaps,    {0} },
 	// { MODKEY,                       XK_y,      incrihgaps,     {.i = +1 } },
 	// { MODKEY,                       XK_o,      incrihgaps,     {.i = -1 } },
 	// { MODKEY|ControlMask,           XK_y,      incrivgaps,     {.i = +1 } },
@@ -127,6 +127,7 @@ static Key keys[] = {
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+	{ MODKEY|ShiftMask|ControlMask, XK_x,      screenshot,     {} },
 };
 
 /* button definitions */
