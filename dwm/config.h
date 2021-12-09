@@ -18,12 +18,12 @@ static const char *fonts[] = {
     "Symbols Nerd "
     "Font:pixelsize=14:style=2048-em:antialias=true:autohint=true",
     "SauceCodePro Nerd Font "
-    "Mono:size=12:style=Italic:antialias=true:autohint=true",
+    "Mono:size=14:style=Italic:antialias=true:autohint=true",
     "WenQuanYi Micro Zen Hei "
-    "Mono:size=12:style=Regular:antialias=true:autohint=true"};
+    "Mono:size=14:style=Regular:antialias=true:autohint=true"};
 static const char dmenufont[] = {
     "SauceCodePro Nerd Font "
-    "Mono:size=12:style=Italic:antialias=true:autohint=true"};
+    "Mono:size=14:style=Italic:antialias=true:autohint=true"};
 static const char col_gray1[] = "#000000";
 static const char col_gray2[] = "#444444";
 static const char col_gray3[] = "#bbbbbb";
